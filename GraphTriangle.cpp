@@ -62,7 +62,7 @@ int countTriangles()                            // Function that counts the trai
             }
         }
     }
-    return countTr/6; // Divide by a factor of 6 to cancel over counting from looping over the 6 permutations of the vertices
+    return countTr/6; // Divide by a factor of 6 to eliminate overcounting from looping over the 6 permutations of the vertices
     
 }
 int main()
