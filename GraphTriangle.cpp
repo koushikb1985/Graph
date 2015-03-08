@@ -14,8 +14,8 @@ Consider a graph with 4 edges and the following connectivity information.
 The connectivity information is specified by specifying the indices of the two endpoints of an edge(i and j),
 followed by the diatance, d(i,j).
  
-Only nodes 1,2 and 3 forms a triangle. Note that the triangle inequality need not be satisfied. We just define
-a triangle as an abstract entity with three vertices with all three verices being mutually connected by an edge.
+Only nodes 1,2 and 3 form a triangle. Note that the triangle inequality need not be satisfied. We just define
+a triangle as an abstract entity with three vertices that are pairwise connected.
 */
 
 
