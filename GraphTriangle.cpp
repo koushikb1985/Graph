@@ -3,26 +3,30 @@ This code counts the number of triangles in a graph given the "direct" connectiv
 Nodes that are not directly connected are assumed to be separated by infinite "direct" ditance.
 
 For example:
-A graph with 4 edges and the following connectivity information has only one triangle
+Consider a graph with 4 edges and the following connectivity information.
  
-1 2 5
-2 3 4
-1 3 10
-3 4 8
-
-The connectivity information is specified by specifying the indices of the two nodes that define an
-edge separated by a space, followed by the diatance which is separated from the node numbers by a space.
+ i j d(i,j)
+ 1 2 5
+ 2 3 4
+ 1 3 10
+ 3 4 8
+ 
+The connectivity information is specified by specifying the indices of the two endpoints of an edge(i and j),
+followed by the diatance, d(i,j).
+ 
 Only nodes 1,2 and 3 forms a triangle. Note that the triangle inequality need not be satisfied. We just define
 a triangle as an abstract entity with three vertices with all three verices being mutually connected by an edge.
 */
+
 
 #include<iostream>
 #include<map>
 #include<set>
 using namespace std;
 
-map<pair<int, int>,int> Graph; //A pair of vertices that define an edge and the distance between the vertices defines a Graph
-set<int> vertices; //Defines a set of all vertices in teh Graph. Using "set" datastructure automatically removes repetitions
+set<int> vertices; //Defines a set of all vertices in the Graph. Using "set" datastructure automatically removes repetitions
+map<pair<int, int>,int> Graph; // A pair of vertices defines an edge; That is the vertices are the endpoints of the edge
+                               // Endpoints of all edges and the corresponding edge lengths defines the Graph completely
 
 void creategraph() //Function that takes the number of edges and connectivity information as input and creates a graph
 {
