@@ -32,11 +32,11 @@ void creategraph() //Function that takes the number of edges and connectivity in
 {
     int E;
     int lnode, rnode, dist;
-    cout << "Enter Number of Vertices: ";
+    cout << "Enter Number of Edges: ";
     cin >> E; //Ask user to input number of edges
     for(int i=0;i<E;i++)
     {
-        cout << "Enter Connectivity Information (Index1 Index2 Distance) for vertex " << i+1 << " : ";
+        cout << "Enter Connectivity Information (Index1 Index2 Distance) for Edge" << i+1 << " : ";
         cin >> lnode >> rnode >> dist;                              //Ask user to input connectivity matrix for each edge
         Graph[make_pair(lnode,rnode)] = dist;                       //Add Edge to graph
         Graph[make_pair(rnode,lnode)] = dist;                       //Connectivity is symmetric
