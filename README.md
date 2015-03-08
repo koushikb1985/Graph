@@ -14,6 +14,7 @@ g++ Dijkstra.cpp -o Dijkstra.o
  d(i,j).
  
  i j d(i,j)
+ 
  1 2 5
  
  2 4 3
