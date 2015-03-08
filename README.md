@@ -3,6 +3,7 @@ g++ GraphTriangle.cpp -o GraphTriangle.o
 # Dijkstra
 g++ Dijkstra.cpp -o Dijkstra.o
 This code computes the shortest distance between two nodes of a graph given the "direct"
+This code computes the shortest distance between two nodes of a graph given the "direct"
 connectivity information. Nodes that are not directly connected are assumed to be separated
 by infinite "direct" ditance.
  
