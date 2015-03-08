@@ -13,18 +13,13 @@ g++ Dijkstra.cpp -o Dijkstra.o
  specified by specifying the indices of the two endpoints of an edge(i and j), followed by the diatance, 
  d(i,j).
  
- 
  i j d(i,j)
  
- 
  1 2 5
- 
- 
+
  2 4 3
  
- 
  1 3 2
- 
  
  1 4 25
  
