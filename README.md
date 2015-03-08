@@ -9,13 +9,13 @@ For example:
 Consider a graph with 4 edges and the following connectivity information.
  
  i j d(i,j)
- 
+# 
  1 2 5
- 
+# 
  2 3 4
- 
+# 
  1 3 10
- 
+# 
  3 4 8
  
 The connectivity information is specified by specifying the indices of the two endpoints of an edge(i and j),
