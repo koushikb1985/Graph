@@ -1,5 +1,6 @@
 # GraphTriangle
 g++ GraphTriangle.cpp -o GraphTriangle.o
+/*
 This code counts the number of triangles in a graph given the "direct" connectivity information.
 Nodes that are not directly connected are assumed to be separated by infinite "direct" ditance.
 
@@ -22,6 +23,7 @@ followed by the diatance, d(i,j).
  
 Only nodes 1,2 and 3 form a triangle. Note that the triangle inequality need not be satisfied. We just define
 a triangle as an abstract entity with three vertices that are pairwise connected.
+*/
 # Dijkstra
 g++ Dijkstra.cpp -o Dijkstra.o
 
